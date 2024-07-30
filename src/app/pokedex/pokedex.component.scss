@@ -1,0 +1,28 @@
+.display-grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin: 20px;
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  padding: 20px;
+}
+
+.poke-card {
+  width: 200px;
+  height: 200px;
+}
+
+.img-wrapper {
+  margin: auto;
+  height: 100px;
+  padding: 10px;
+}

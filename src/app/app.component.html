@@ -1,34 +1,39 @@
-<div *ngIf="loading; else display">
-  <p>Loading.....</p>
-</div>
-<ng-template #display>
-  <div class="card-container">
-    <mat-card>
-      <mat-card-header>
-        <mat-card-title>Look at this dog</mat-card-title>
-        <mat-card-subtitle>Isnt this a good dog</mat-card-subtitle>
-      </mat-card-header>
-      <div class="img-wrapper">
-        <img [src]="dogImageUrl" height="500" />
-      </div>
-      <mat-card-footer>
-        <mat-card-actions>
-          <button mat-raised-button color="primary" (click)="onClick()">
-            Get a dog
-          </button>
-        </mat-card-actions>
-      </mat-card-footer>
-    </mat-card>
-  </div>
-  <div class="card-container">
-    <mat-card>
-      <mat-card-title> This is the grocery list </mat-card-title>
-      <mat-list>
+@let name = "Lisa";
+@let clicks = clickNumber;
+<!-- @if (loading) {
+  <p>Template is loading</p>
+} @else { -->
+  <app-pokedex></app-pokedex>
+<!--     <div class="card-container">
+      <mat-card>
+        <mat-card-header>
+          <mat-card-title>Look at this dog</mat-card-title>
+          <mat-card-subtitle>Isnt this a good dog</mat-card-subtitle>
+        </mat-card-header>
+        <p>Im on click number {{clicks}}</p>
+        <div class="img-wrapper">
+          <img [src]="dogImageUrl" height="500" />
+        </div>
+        <mat-card-footer>
+          <mat-card-actions>
+            <button mat-raised-button color="primary" (click)="onClick()">
+              Get a dog
+            </button>
+          </mat-card-actions>
+        </mat-card-footer>
+      </mat-card>
+    </div>
+    <div class="card-container">
+      <mat-card>
+        <mat-card-title> This is the grocery list, {{ name }} </mat-card-title>
+        <mat-list>
+          @for (food of foods; track food) {
+            <mat-list-item>
+              {{ food }}
+            </mat-list-item>
+          }
+        </mat-list>
+      </mat-card>
+    </div>  }-->
 
-        <mat-list-item *ngFor="let food of foods">
-          {{ food }}
-        </mat-list-item>
-      </mat-list>
-    </mat-card>
-  </div>
-</ng-template>
+
